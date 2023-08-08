@@ -1,0 +1,33 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(32, 32, 32); 
+  color: white;
+}
+#box1{
+  
+  background-color: rgba(0, 255, 255, 0.317);
+  border-radius: 50%;
+  position: fixed;
+  transition: 0.001s;
+  z-index: 0;
+ 
+}
+.noise::before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  /* you can control opacity of noise  */
+  opacity: .02;  
+  z-index: 1000;
+  pointer-events: none;
+  background: url(noise.gif) ;
+}
+@media screen and (max-width:769px){
+#box1{
+  display: none;
+}
+}
